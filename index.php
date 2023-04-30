@@ -94,11 +94,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome/css/solid.css" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+    </style>
+
 </head>
 <body>
-    <br>
-    <a class="link" href="register.php">Register</a>
-    <br>
     <br>
     <a class="link" href="german.php">Deutsch</a>
     <form class="box" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -111,7 +115,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <input type="password" placeholder="Password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                     <span class="invalid-feedback"><?php echo $password_err; ?></span>
                 </div>
-                <button class="login" type="submit" value="Submit" name="submit">Login</button>
+                <div>
+                <a class="regicon" href="https://github.com/GeistFan/LoginSnake"><i class="fa-brands fa-github"></i></a> &nbsp;
+                <button class="login" type="submit" value="Submit" name="submit"> <i class="fa-solid fa-lock-open"></i> </button> &nbsp;
+                <a class="regicon" href="register.php"><i class="fa-solid fa-plus"></i></a>
+                </div>
             </form>
 </body>
 </html>

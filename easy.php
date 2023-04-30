@@ -32,6 +32,17 @@ if ($score_exists == true)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome/css/solid.css" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+    </style>
 </head>
 <body>
   <br>
@@ -80,13 +91,13 @@ if ($score_exists == true)
             requestAnimationFrame(draw); // draw die ganze zeit ausführen
         }
         function drawScore() {
-            ctx.font = "16px Arial";
-            ctx.fillStyle = "#0095DD";
+            ctx.font = "18px Nunito";
+            ctx.fillStyle = "#FFFFFF";
             ctx.fillText("Score: "+score, 8, 20);
         }
         function drawHighScore() {
-            ctx.font = "16px Arial";
-            ctx.fillStyle = "#0095DD";
+            ctx.font = "18px Nunito";
+            ctx.fillStyle = "#FFFFFF";
             ctx.fillText("Highscore: "+highscore, 100, 20);
         }
         function placeFood() // Food plazieren

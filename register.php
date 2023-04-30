@@ -101,6 +101,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
+    <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome/css/solid.css" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -119,9 +125,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
-                <button class="login" type="submit" value="Submit" name="submit">Submit</button>
+                <button class="login" type="submit" value="Submit" name="submit"><i class="fa-solid fa-user-plus"></i></i></button>
             </div>
-            <br>
+        </form>
+        <form class="box-register-login">    
             <h2>Already have an account?</h2>
             <a class="link" href="index.php">Login here</a>
         </form>

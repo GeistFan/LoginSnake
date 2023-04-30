@@ -6,8 +6,7 @@ require_once "config.php";
 
 if ($score_exists == true)
 {
-    $sql ="INSERT INTO users (highscore)
-                VALUES (?)";
+    $sql ="UPDATE users SET highscore = $score_exists WHERE id=1";
     $stmt = $link->prepare($sql);
 
     if ($stmt === false)
@@ -33,3 +32,4 @@ else
     </form>
 </body>
 </html>
+UPDATE users SET highscore = $$score_exists WHERE id=1

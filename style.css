@@ -1,15 +1,17 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: #34495e;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background: #4a4cb9;
 }
 h1{
   color: white;
   font-weight: 500;
+  font-family: 'Nunito', sans-serif;
 }
 .box{
-  width: 300px;
+  width: 400px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -29,7 +31,7 @@ h1{
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #3498db;
+  border: 2px solid #244ec3;
   padding: 14px 10px;
   width: 200px;
   outline: none;
@@ -39,13 +41,13 @@ h1{
 }
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
   width: 280px;
-  border-color: #2ecc71;
+  border-color: #3498db;
 }
 .box-register{
   width: 400px;
   padding: 40px;
   position: absolute;
-  top: 50%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%,-50%);
   background: #191919;
@@ -56,18 +58,13 @@ h1{
   text-transform: uppercase;
   font-weight: 5
 }
-.box-register h2{
-  color: white;
-  text-transform: uppercase;
-  font-weight: 5
-}
 .box-register input[type = "text"],.box-register input[type = "password"]{
   border:0;
   background: none;
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #3498db;
+  border: 2px solid #244ec3;
   padding: 14px 10px;
   width: 300px;
   outline: none;
@@ -77,25 +74,58 @@ h1{
 }
 .box-register input[type = "text"]:focus,.box-register input[type = "password"]:focus{
   width: 380px;
-  border-color: #2ecc71;
+  border-color: #3498db;
+}
+.login-register{
+  border:0;
+  background: none;
+  display: square;
+  margin: 5px auto;
+  text-align: center;
+  border: 2px solid #244ec3;
+  padding: 17px 17px;
+  outline: none;
+  color: white;
+  border-radius: 100px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.login-register:hover{
+  padding: 21px 22px;
+  background: #244ec3;
+}
+.box-register-login{
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box-register-login h2{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 5
 }
 .login{
   border:0;
   background: none;
-  display: block;
-  margin: 20px auto;
+  display: square;
+  margin: 5px auto;
   text-align: center;
-  border: 2px solid #2ecc71;
-  padding: 14px 40px;
+  border: 2px solid #244ec3;
+  padding: 17px 17px;
   outline: none;
   color: white;
-  border-radius: 24px;
+  border-radius: 100px;
   transition: 0.25s;
   cursor: pointer;
 }
 .login:hover{
-  padding: 14px 50px;
-  background: #2ecc71;
+  padding: 21px 22px;
+  background: #244ec3;
 }
 .box-snake{
   width: 630px;
@@ -137,7 +167,7 @@ h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: #191919;
+  background: none;
   text-align: center;
 }
 .box-game h1{
@@ -145,7 +175,7 @@ h1{
   text-transform: uppercase;
   font-weight: 500;
 }
-.box-game input[type = "text"],.box input[type = "password"]{
+.box-game input[type = "text"],.box-game input[type = "password"]{
   border:0;
   background: none;
   display: block;
@@ -159,14 +189,60 @@ h1{
   border-radius: 24px;
   transition: 0.25s;
 }
-.box-game input[type = "text"]:focus,.box input[type = "password"]:focus{
+.box-game input[type = "text"]:focus,.box-game input[type = "password"]:focus{
   width: 280px;
   border-color: #2ecc71;
+}
+.box-select{
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.button-select {
+  border:0;
+  background: none;
+  display: square;
+  margin: 5px auto;
+  text-align: center;
+  border: 2px solid #244ec3;
+  padding: 14px 30px;
+  outline: none;
+  color: white;
+  border-radius: 100px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.button-select:hover {
+  padding: 16px 35px;
+  background: #244ec3;
 }
 .link {
   text-align: right;
   text-decoration: none;
   color: white;
   margin: 20px auto;
-  padding: 14px 40px
+  padding: 14px 40px;
+}
+.regicon {
+  border:0;
+  background: none;
+  display: square;
+  margin: 5px auto;
+  text-align: center;
+  border: 2px solid #244ec3;
+  padding: 14px 17px;
+  outline: none;
+  color: white;
+  border-radius: 100px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.regicon:hover {
+  padding: 18px 21px;
+  background: #244ec3;
 }
